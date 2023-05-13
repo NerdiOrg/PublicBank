@@ -1,5 +1,5 @@
 ## PublicBank
-A Solidity smart contract that lets any address deposit or withdraw funds from their account balance, using the contract as 1 shared pool. Clear permissions and decentralized banking for blockchains / cryptocurrencies (Ethereum / Solidity).
+A Solidity smart contract that lets any address deposit or withdraw funds with address-based balances. Each contract is its own bank, with secure permissions as a decentralized banking solution for blockchains / cryptocurrencies (Ethereum / Solidity).
 
 ## IPFS CONFIRMATION
 To help increase the decentralized nature of this project, you may identify each contract version's source code on IPFS.
