@@ -21,16 +21,17 @@ contract PublicBank {
 
     function withdraw(uint amountInWei) public returns(uint){
         require(accountBalances[msg.sender] >= amountInWei, "Withdrawal declined: Insufficient funds available in account balance.");
+        accountBalances[msg.sender] -= amountInWei;
         (bool sent, ) = payable(msg.sender).call{value: amountInWei}("");
         require(sent, "There was an issue sending the requested tokens.");
-        accountBalances[msg.sender] -= amountInWei;
         return accountBalances[msg.sender];
     }
 
     function withdrawAll() public returns(bool){
-        (bool sent, ) = payable(msg.sender).call{value: accountBalances[msg.sender]}("");
+        uint amount = accountBalances[msg.sender]
+        accountBalances[msg.sender] -= amount;
+        (bool sent, ) = payable(msg.sender).call{value: amount}("");
         require(sent, "There was an issue sending the remaining tokens in your account balance.");
-        accountBalances[msg.sender] = 0;
         return true;
     }
 
