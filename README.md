@@ -12,7 +12,7 @@ https://ipfs.io/ipfs/bafkreidkevyddgu3wr3thq7fyge2cypp7zge37wcii5ngowckknxwbutme
 The `PublicBank` contract is a simple banking contract developed in Solidity, an object-oriented programming language for writing smart contracts on Ethereum-based blockchain platforms. It offers basic banking operations such as deposit, withdraw, and check balance.
 
 ## Prerequisites
-You need to have a basic understanding of Solidity to comprehend this contract. Knowledge of Ethereum and smart contracts is also necessary.
+You need to have a basic understanding of Solidity to comprehend this contract. Knowledge of Ethereum and smart contracts is also necessary. You must fully read and understand the LICENSE file found in this project's root directory. I make no guarantees or assurances as to the security, use, or application of the code or files found in this repository.
 
 ## Code Explanation
 
