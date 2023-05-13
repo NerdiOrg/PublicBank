@@ -5,9 +5,8 @@ contract PublicBank {
     mapping (address => uint) accountBalances;
     string bankName;
     
-    constructor(string memory newBankName) payable{
+    constructor(string memory newBankName){
         bankName = newBankName;
-        deposit();
     }
 
     receive() external payable {
