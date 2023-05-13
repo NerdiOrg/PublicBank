@@ -4,7 +4,7 @@ A Solidity smart contract that lets any address deposit or withdraw funds from t
 ## IPFS CONFIRMATION
 To help increase the decentralized nature of this project, you may identify each contract version's source code on IPFS.
 
-CURRENT / LATEST (v 0.1) - bafkreidkevyddgu3wr3thq7fyge2cypp7zge37wcii5ngowckknxwbutme
+CURRENT / LATEST (v0.1) - `bafkreidkevyddgu3wr3thq7fyge2cypp7zge37wcii5ngowckknxwbutme`
 https://ipfs.io/ipfs/bafkreidkevyddgu3wr3thq7fyge2cypp7zge37wcii5ngowckknxwbutme
 
 
