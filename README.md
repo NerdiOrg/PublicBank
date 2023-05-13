@@ -23,7 +23,7 @@ The `PublicBank` contract includes a mapping to hold `accountBalances` for each 
 
 ### Constructor
 
-The `constructor` is a special function that is executed during the creation of the contract and cannot be called afterwards. It is payable, which means it can receive Ether. The constructor sets the `bankName` and calls the `deposit` function.
+The `constructor` is a special function that is executed during the creation of the contract and cannot be called afterwards. The constructor sets the `bankName`. In the future this could be used to have multiple banks or departments on 1 contract.
 
 ### Receive Function
 
@@ -31,15 +31,15 @@ The `receive` function is a special function that is executed when a contract re
 
 ### Deposit Function
 
-The `deposit` function is a private function, which means it can only be called internally (from this contract). This function updates the `accountBalances` mapping to record the deposited amount. The `msg.value` keyword refers to the number of wei sent with the message.
+The `deposit` function is a private function, which means it can only be called internally (from this contract). This function updates the `accountBalances` mapping to record the deposited amount. The `msg.value` refers to the number of wei sent with the message, so the sender can withdraw the amount later.
 
 ### Withdraw Function
 
-The `withdraw` function allows the user to withdraw a specified amount of Ether from their account. It checks if the account balance is sufficient for the withdrawal, sends the amount, and then updates the balance in `accountBalances`.
+The `withdraw` function allows the user to withdraw a specified amount of tokens (in wei) from their account. It checks if the account balance is sufficient for the withdrawal, sends the amount, and then updates the balance in `accountBalances`.
 
 ### WithdrawAll Function
 
-The `withdrawAll` function allows the user to withdraw all Ether from their account. It sends the total balance of the user's account and then sets the balance in `accountBalances` to zero.
+The `withdrawAll` function allows the user to withdraw all tokens from their account. It sends the total balance of the user's account and then sets the balance in `accountBalances` to zero.
 
 ### CheckBalance Function
 
